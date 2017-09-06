@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>First Website with bootstrap</title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+		<!--social icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	<body>
+	
+	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+	<div class="container"  id="main">
+		
+		<div  class="navbar navbar-fixed-top">
+			<div class="container">
+				
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="/" id="logo"><img src="images/logo.png" alt="Your logo"> </a>
+
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					
+					<ul class="nav navbar-nav">
+						
+						<li class="active" id="first_item">
+							<a href="#">Home</a>
+						</li>
+
+						<li class="dropdown">
+							
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">Web Development</a></li>
+								<li><a href="#">SEO</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">More Services</li>
+								<li><a href="#">Content Creation</a></li>
+								<li><a href="#">Social Media Marketing</a></li>
+								
+							</ul><!--end dropdownmenu-->
+						</li>
+
+						<li class="dropdown">
+							
+							<a href="#" class="dropdown-toggle visible-lg" data-toggle="dropdown">iOS <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Tweetbot</a></li>
+								<li><a href="#">Calcbot</a></li>
+								
+							</ul><!--end dropdownmenu-->
+						</li>
+
+						<li class="dropdown">
+							
+							<a href="#" class="dropdown-toggle visible-lg" data-toggle="dropdown">mac OS <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Pastebot</a></li>
+								<li><a href="#">Tweetbot</a></li>
+								<li><a href="#">Calcbot</a></li>
+								
+							</ul><!--end dropdownmenu-->
+						</li>
+
+						<li class="dropdown">
+							
+							<a href="#" class="dropdown-toggle visible-lg" data-toggle="dropdown">Support <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Need help?</a></li>
+								<li><a href="#">Links</a></li>
+								
+							</ul><!--end dropdownmenu-->
+						</li>
+
+						<li class="dropdown">
+							
+							<a href="#" class="dropdown-toggle visible-lg" data-toggle="dropdown">Blog <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">My Blog</a></li>
+								<li><a href="#">Join our team</a></li>
+								<li><a href="#">Blogger</a></li>
+								
+							</ul><!--end dropdownmenu-->
+						</li>
+
+						<li class="dropdown">
+							
+							<a href="#" class="dropdown-toggle visible-lg" data-toggle="dropdown">Company <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Techies</a></li>
+								<li><a href="#">Core Team</a></li>
+								
+							</ul><!--end dropdownmenu-->
+						</li>
+
+						
+					</ul><!--end nav-->
+
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search..." id="searchinput">
+						<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form><!--end navbar form-->
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span> Signout</a></li>
+							</ul>
+
+						</li>
+					</ul><!--end nav pull-right-->
+				</div><!--end navbar-->
+
+			</div>
+		</div><!--end navbar-->
+
+
+		<div class="carousel slide" id="myCarousel">
+			<!--Indicators-->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+
+			</ol>
+
+			<!--wrapper for slides-->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							
+						</div><<!--end carousel caption-->
+				</div><!--end item-->
+			
+				<div class="item" id="slide2">
+						<div class="carousel-caption">
+							
+						</div><<!--end carousel caption-->
+				</div><!--end item-->
+			</div><!--end carousel-inner-->
+
+			<!--controls-->
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+		</div><!--end of carousel-->
+
+
+
+		<div class="row" id="features">
+			
+			<div class="col-sm-4 feature">
+				<div class="panel" id="first">
+					
+					<img src="images/calcbot.jpg" alt="calcbot">
+					<h3 class="panel-title">CALCBOT</h3>
+					<p>An Intelligent Calculator and Unit Convertor</p>
+					<a href="#" target="_blank" class="btn btn-warning">Read More</a>
+				</div><!--end panel-->
+			</div><!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel" id="third">
+					<img src="images/tweetbot.jpg" alt="tweetbot">
+					<h3 class="panel-title">TWEETBOT</h3>
+					<p>A Twitter Client with Personality</p>
+					<a href="#" target="_blank" class="btn btn-info">Read More</a>
+				</div><!--end panel-->
+			</div><!--end feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel"  id="second">
+					<img src="images/convertbot.jpg" alt="convertbot">
+					<h3 class="panel-title">CONVERTBOT</h3>
+					<p>A Converter for Unit Conversions</p>
+					<a href="#" target="_blank" class="btn btn-primary">Read More</a>
+					
+				</div><!--end panel-->
+			</div><!--end feature-->
+
+		</div><!--end features-->
+
+
+
+
+
+
+		
+
+		<div class="row" id="moreInfo">
+			<div class="col-sm-8" id="omega">
+				<h3><span class="glyphicon glyphicon-map-marker"></span> Our location</h3>
+				<br>
+							
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9028.958396177846!2d74.73712064071547!3d13.21936312228045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1504634105278" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+							<p>Tapbots has been creating iOS and Mac apps since 2008. We are a small team of three working remotely from Texas, California, and Canada. You can send feedback and get support via email from the settings of our apps which provides us with detail about the version of the app you are running. You can also get help on twitter via our app accounts. Follow them to get tips and updates.</p>
+							<p>You can send feedback and get support via email from the settings of our apps which provides us with detail about the version of the app you are running. You can also get help on twitter via our app accounts. Follow them to get tips and updates.</p>
+							
+			</div><!--end col-sm-8-->
+
+			<div class="col-sm-4" id="alpha">
+				<h3>Registration</h3>
+				<br>
+				<div class="tabbable first_section">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#tab3" data-toggle="tab">Login</a>
+						</li>
+						<li>
+							<a href="#tab4" data-toggle="tab">Signup</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+
+						<div class="tab-pane active" id="tab3">
+							<form action="/action_page.php">
+							    <div class="container">
+							    <br>
+							    <label><b>Username</b></label>
+							    <input type="text" placeholder="Enter Username" name="uname" class="pad" required>
+
+							    <label><b>Password</b></label>
+							    <input type="password" placeholder="Enter Password" name="psw" class="pad" required>
+
+							    <button type="submit" class="btn btn-block btn-success">Login</button>
+							    <a href="#">Forgot password?</a>
+					            </div>
+							</form>
+
+						</div><!--end tab-pane-->
+
+						<div class="tab-pane" id="tab4">
+							
+							<form action="/action_page.php">
+							    <div class="container">
+							    <br>
+							    <label><b>Email id *</b></label>
+
+							    <input type="text" placeholder="Enter email id" name="uname" class="pad" required>
+
+							    <label><b>Username *</b></label>
+
+							    <input type="text" placeholder="Choose Username" name="uname" class="pad" required>
+
+							    
+							    <label><b>Password *</b></label>
+							    <input type="password" placeholder="Enter Password" name="psw" class="pad" required>
+
+							     <a href="#" id="alerMe"><button type="submit" class="btn btn-block btn-warning">Sign up</button></a> 
+					            </div>
+							</form>
+
+						</div><!--end tab-pane-->
+					</div><!--end tab-content-->
+
+				</div><!--end tabbable-->
+			</div><!--end col-sm-4-->
+
+			
+		</div><!--end moreInfo-->
+
+		<div class="row" id="bigCallout"><!--Big Callout-->
+			<div class="col-12">
+			
+			<div class="alert alert-warning alert-block fade in" id="successAlert">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<h4>Hi there!</h4>
+				<p>You have to login to buy our products online.If you don't have a tapbot account create one in signup tab!</p>
+			</div><!--end alert-->
+
+			<!--visible only on small devices-->
+			<div class="well well-small visible-sm">
+				<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>    Give us a call!</a>
+			</div>
+			<div class="well">
+			<span id="wellcallout">
+				<div class="page-header">
+					<h1>Tapbots <br><small>Headquartered at California,U.S</small></h1>
+				</div><!--end page-header-->
+				
+				<p class="lead">Tapbots has been creating iOS and Mac apps since 2008. We are a small team of three working remotely from Texas, California, and Canada.
+				</p>
+			</span>
+				<a href="#" class="btn btn-large btn-primary" id="alertMe">Buy our products</a>
+				<a href="#" class="btn btn-large btn-link">Wanna browse our products first?</a>
+
+			</div><!--end well-->
+
+			</div>
+		</div><!--end bigCallout-->
+
+
+
+		<div class="row" id="moreCourses">
+				
+		</div><!--end moreCourses-->
+
+
+	</div><!--end container-->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+				<h6>Copyright &copy; 2017 {Tapbots.com}</h6>	
+				</div>
+
+				<div class="col-sm-4">
+					<h6>About us</h6>
+					<p>Tapbots has been creating iOS and Mac apps since 2008. We are a small team of three working remotely from Texas, California, and Canada. You can send feedback and get support via email from the settings of our apps which provides us with detail about the version of the app you are running.
+
+You can also get help on twitter via our app accounts. Follow them to get tips and updates.
+
+.</p>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Follow us</h6>
+					<ul class="unstyled">
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Google +</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Developed at Tapbots Labs by our tech team</h6>
+				</div>
+			</div>
+		</div><!--end container-->
+
+
+		<div class="container">
+			<div class="row"  id="copyright">
+				<div class="col-sm-6">
+					<p>COPYRIGHT 2008-2017 TAPBOTS, LLC. ALL RIGHTS RESERVED.</p>
+				</div><!--end col-sm-3-->
+				<div class="col-sm-6">
+					<a href="#" class="fa fa-facebook"> </a>
+					<a href="#" class="fa fa-twitter"> </a>
+					<a href="#" class="fa fa-linkedin"> </a>
+					<a href="#" class="fa fa-google"> </a>
+					<a href="#" class="fa fa-youtube"> </a>
+					<a href="#" class="fa fa-instagram"> </a>
+					<a href="#" class="fa fa-pinterest"> </a>
+					<a href="#" class="fa fa-snapchat"> </a>
+					<a href="#" class="fa fa-skype"> </a>
+					<a href="#" class="fa fa-skype"> </a>
+					<a href="#" class="fa fa-tumblr"> </a>
+					<a href="#" class="fa fa-android"> </a>
+				</div><!--end col-sm-3-->
+			</div><!--end row-->
+		</div><!--end container
+
+	</footer>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
